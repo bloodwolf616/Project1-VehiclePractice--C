@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-//adding a comment to my bird class.
+
+//i erased the top comment.
 namespace Project1_tester_
 {
     class Bird
