@@ -39,23 +39,16 @@ namespace Project1_tester_
 
 
 
-                List<int> goodGasMilage = new List<int> { 15 };
+                var redCars = myGarage.Where(car => car.Color == "red");
 
 
-                var efficientCars = myGarage.Join(
-                    goodGasMilage,
-                    car => car.MilesPerGallon,
-                    ggm => ggm,
-                    (car, ggm) => car
-                    );
-
-                foreach (var car in efficientCars)
+                foreach (var car in redCars)
                 {
                     Console.WriteLine("Model: " + car.Model + "   MilesPerGallon: " + car.MilesPerGallon );
                 }
 
                                 
-          
+                 
 
                 
 
