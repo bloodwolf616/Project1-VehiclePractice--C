@@ -178,7 +178,7 @@ namespace Project1_tester_
 
         public void GetOilChange()
         {
-            int oilChange = 10000
+            int oilChange = 10000;
             MilesToOilChange += oilChange;
             Console.WriteLine($"You have {oilChange} miles until your next oil change.");
         }
