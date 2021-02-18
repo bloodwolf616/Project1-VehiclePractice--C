@@ -114,8 +114,11 @@ namespace Project1_tester_
 
 
         // the car will start out locked. If the the car is locked the code will throw an error. 
-        // takes miles as an integer. Finds the amount of gallons used and then places it in a "while" loop. Every time the loop runs milage is added, GasInTank goes down by one
-        // and the counter goes down by one.
+       
+        /// <summary>
+        /// drives the vehicle. effects Milage, GasInTank, MilesToOilChange properties
+        /// </summary>
+        /// <param name="miles">miles that you wish to drive</param>
         public virtual void Drive(int miles)
         {
 
@@ -184,7 +187,6 @@ namespace Project1_tester_
         }
 
 
-     
 
 }
 
