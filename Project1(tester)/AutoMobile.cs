@@ -71,7 +71,7 @@ namespace Project1_tester_
       
       //----------------------------------------------------------------------------------------------------------------------------->
 
-
+      // the car will start out locked so you will have to unlock car to use some of the methods
       // Is locked propertiues and all of it's methods.
       
 
@@ -113,7 +113,7 @@ namespace Project1_tester_
 
 
 
-        // If the the car is locked the code will throw an error. 
+        // the car will start out locked. If the the car is locked the code will throw an error. 
         // takes miles as an integer. Finds the amount of gallons used and then places it in a "while" loop. Every time the loop runs milage is added, GasInTank goes down by one
         // and the counter goes down by one.
         public virtual void Drive(int miles)
@@ -144,11 +144,7 @@ namespace Project1_tester_
 
             }
 
-
-
-
-            
-            else { throw new InvalidOperationException("Your car is locked. Unlock to drive."); }
+                else { throw new InvalidOperationException("Your car is locked. Unlock to drive."); }
 
             
             //miles to oil changes decreases every time you use the Drive() method. If MilesToOilChange() gets to zero it will throw an exception.
@@ -180,10 +176,11 @@ namespace Project1_tester_
 
         //-------------------------------------------------------------------------------------------------------------------------
 
-        public void GetOilChange(int milesToNextOilChange)
+        public void GetOilChange()
         {
-            MilesToOilChange += milesToNextOilChange;
-            Console.WriteLine($"You have {milesToNextOilChange} miles until your next oil change.");
+            int oilChange = 10000
+            MilesToOilChange += oilChange;
+            Console.WriteLine($"You have {oilChange} miles until your next oil change.");
         }
 
 
