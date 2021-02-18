@@ -47,6 +47,10 @@ namespace Project1_tester_
                     Console.WriteLine("Model: " + car.Model + "   MilesPerGallon: " + car.MilesPerGallon );
                 }
 
+
+                Car myCar = new Car(15, "red", 20, 2012, "Cadillac");
+                myCar.Unlock();
+                myCar.Drive(200);
                                 
                  
 
