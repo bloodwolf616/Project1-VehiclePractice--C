@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F6EF7AC6-9272-42AE-BC14-1EA7014F86AB}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Project1_tester_</RootNamespace>
-    <AssemblyName>Project1%28tester%29</AssemblyName>
+    <ProjectGuid>{7C5EE422-B1F5-489A-9E04-E96F13B48431}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExtensionLibrary1</RootNamespace>
+    <AssemblyName>ExtensionLibrary1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,33 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoMobile.cs" />
-    <Compile Include="Bird.cs" />
-    <Compile Include="Cadillac.cs" />
-    <Compile Include="Car.cs" />
-    <Compile Include="GarbageCan.cs" />
-    <Compile Include="GarbageTruck.cs" />
-    <Compile Include="LargeTow.cs" />
-    <Compile Include="MediumTow.cs" />
-    <Compile Include="NotTowable.cs" />
-    <Compile Include="NotTowableVehicleTest.cs" />
-    <Compile Include="PickupTruck.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MathExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SmallTow.cs" />
-    <Compile Include="Suv.cs" />
-    <Compile Include="ITowable.cs" />
-    <Compile Include="Trailer.cs" />
-    <Compile Include="Vehicle.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ExtensionLibrary1\ExtensionLibrary1.csproj">
-      <Project>{7c5ee422-b1f5-489a-9e04-e96f13b48431}</Project>
-      <Name>ExtensionLibrary1</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

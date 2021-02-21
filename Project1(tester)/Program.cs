@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ExtensionLibrary1;
 
 namespace Project1_tester_
 {
@@ -51,10 +51,12 @@ namespace Project1_tester_
                 Car myCar = new Car(15, "red", 20, 2012, "Cadillac");
                 myCar.Unlock();
                 myCar.Drive(200);
-                                
-                 
 
-                
+
+
+                int myNumber = 5;
+
+                Console.WriteLine(myNumber.TimesTen());
 
 
 
@@ -73,7 +75,7 @@ namespace Project1_tester_
 
 //Goals:
 //
-//1.add needsOilChange property to Automobile class that is affected every time milage property is added. Override property in Cadillac  
+//1.
 //2. Improve the Garbage truck class.
 //
 //
@@ -85,7 +87,7 @@ namespace Project1_tester_
 //      1.milage should be increased by MilesPerGallon
 //      2.GasInTank should be decreased by one.
 //5. If the user complets the loops it should print a statement.
-//6.
+//6.add needsOilChange property to Automobile class that is affected every time milage property is added. Override property in Cadillac  
 
 
 
