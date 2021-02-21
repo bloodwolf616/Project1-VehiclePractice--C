@@ -9,9 +9,11 @@ namespace ExtensionLibrary1
     public static class MathExtension
     {
 
-        public static int TimesTen(this int number)
+        public static int TimesTen(this int source)
         {
-            return number * 10;
+            if(source == 0) { throw new ArgumentNullException(nameof(source)); }
+            
+            return source * 10;
         }
 
     }
