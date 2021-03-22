@@ -15,7 +15,7 @@ namespace Project1_tester_
        
         public GarbageTruck(int gasTank, String color, int milesPerGallon, int yearOfManufacturer, int trailerWeight, int maxCarryWeight, string model) : base(gasTank, color, milesPerGallon, yearOfManufacturer, model)
         {
-            GasInTank = gasTank;
+        
             MaxCarryWeight = maxCarryWeight;
             RemainingWeight = MaxCarryWeight;
             TrailerWeight = trailerWeight;

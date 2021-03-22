@@ -13,7 +13,7 @@ namespace Project1_tester_
         public override int MilesToOilChange { get; protected set; } = 5000;
         public PickupTruck(int gasTank, String color, int milesPerGallon, int yearOfManufacturer, int trailerWeight, string model) : base(gasTank, color, milesPerGallon, yearOfManufacturer, model)
         {
-            GasInTank = gasTank;
+            
 
             TrailerWeight = trailerWeight;
             // We specify that our SetTow interface is a LargeTow object.

@@ -181,7 +181,7 @@ namespace Project1_tester_
 
 
         /// <summary>
-        /// Gives the vehicle an oil change. returns how many miles until next oild change
+        /// Gives the vehicle an oil change. returns how many miles until next oil change
         /// </summary>
         public void GetOilChange()
         {

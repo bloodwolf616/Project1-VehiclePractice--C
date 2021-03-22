@@ -58,7 +58,7 @@ namespace Project1_tester_
 
                 Console.WriteLine(myNumber.TimesTen());
 
-
+                GarbageTruck myGarbageTruck = new GarbageTruck(13, "red", 15, 2001, 3000, 10000, "Ford");
 
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }

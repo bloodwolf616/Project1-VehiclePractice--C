@@ -11,7 +11,7 @@ namespace Project1_tester_
         public override int MilesToOilChange { get; protected set; } = 15000;
         public Cadillac(int gasTank, String color, int milesPerGallon, int yearOfManufacturer, string model) : base(gasTank, color, milesPerGallon, yearOfManufacturer, model)
         {
-            GasInTank = gasTank;
+            
             SetTow = new NotTowable();
             
         }
