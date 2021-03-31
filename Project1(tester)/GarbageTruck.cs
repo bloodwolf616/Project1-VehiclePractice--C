@@ -11,13 +11,13 @@ namespace Project1_tester_
         
         protected readonly int TrailerWeight;
         public int MaxCarryWeight { get; }
-        public int RemainingWeight { get; private set; }
+       
        
         public GarbageTruck(int gasTank, String color, int milesPerGallon, int yearOfManufacturer, int trailerWeight, int maxCarryWeight, string model) : base(gasTank, color, milesPerGallon, yearOfManufacturer, model)
         {
         
             MaxCarryWeight = maxCarryWeight;
-            RemainingWeight = MaxCarryWeight;
+            
             TrailerWeight = trailerWeight;
             // We specify that our SetTow interface is a LargeTow object.
             SetTow = new LargeTow(trailerWeight);
@@ -25,29 +25,19 @@ namespace Project1_tester_
         }
 
 
-        public bool TakeOutGarbage(GarbageCan[] cans, int milesBetweenCans)
+        public void TakeOutGarbage(GarbageCan[] cans, int milesBetweenCans)
         {
 
             foreach (var can in cans)
             {
-                RemainingWeight -= can.GarbageWeight;
+               
                 can.EmptyOutGarbageCan();
                 Drive(milesBetweenCans);
 
             }
-            
 
-            if (RemainingWeight > 0)
-            {
-                Console.WriteLine($"This garbage truck has taken out all the trash. You can take out {RemainingWeight} more pound(s) of trash");
-                return true;
-            }
-
-            else
-            {
-                Console.WriteLine("This garbage truck has failed to take out all the trash because it has reached full capacity");
-                return false;
-            }
+            Console.WriteLine("you have taken out all the trash.");
+         
 
         }
     }
