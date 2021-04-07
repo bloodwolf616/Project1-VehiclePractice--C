@@ -49,6 +49,7 @@
     <Compile Include="Car.cs" />
     <Compile Include="GarbageCan.cs" />
     <Compile Include="GarbageTruck.cs" />
+    <Compile Include="IAutomobile.cs" />
     <Compile Include="LargeTow.cs" />
     <Compile Include="MediumTow.cs" />
     <Compile Include="NotTowable.cs" />
@@ -60,7 +61,6 @@
     <Compile Include="Suv.cs" />
     <Compile Include="ITowable.cs" />
     <Compile Include="Trailer.cs" />
-    <Compile Include="Vehicle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

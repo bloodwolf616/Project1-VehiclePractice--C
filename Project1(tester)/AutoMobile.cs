@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project1_tester_
 {
-    abstract class AutoMobile : Vehicle
+    abstract class AutoMobile : IAutomobile
     {
 
         public int GasTank { get; private set; }
