@@ -32,33 +32,32 @@ namespace Project1_tester_
                                                                         new Suv(20, "blue", 25, 2009, 2000, "Toyota"),
                                                                         new Suv(12, "grey", 25, 2003, 2000, "Chevy"),
                                                                         new Suv(13, "white", 25, 2017, 2000, "Chevy"),
-                                                                        new GarbageTruck(10, "grey", 10, 2002, 5000, 15000, "Chevy"),
+                                                                        new GarbageTruck(10, "grey", 10, 2002, 5000, 15000, "Camarro"),
                                                                         new GarbageTruck(10, "purple", 10, 2002, 5000, 15000, "Chevy")
 
                                                 };
 
 
 
-                var redCars = myGarage.Where(car => car.Color == "red");
+                myGarage.Sort();
 
 
-                foreach (var car in redCars)
+             
+                PickupTruck newTruck = new PickupTruck(15, "black111222", 13, 1995, 5000, "Volvo");
+
+                int result = myGarage.BinarySearch(newTruck);
+
+                if(result < 0)
                 {
-                    Console.WriteLine("Model: " + car.Model + "   MilesPerGallon: " + car.MilesPerGallon );
+                    myGarage.Insert(~result, newTruck);
+                }
+
+                foreach (AutoMobile car in myGarage)
+                {
+                    Console.WriteLine($"Model: {car.Model}   Color: {car.Color} \n");
                 }
 
 
-                Car myCar = new Car(15, "red", 20, 2012, "Cadillac");
-                myCar.Unlock();
-                myCar.Drive(200);
-
-
-
-                int myNumber = 5;
-
-                Console.WriteLine(myNumber.TimesTen());
-
-                GarbageTruck myGarbageTruck = new GarbageTruck(13, "red", 15, 2001, 3000, 10000, "Ford");
 
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
@@ -204,4 +203,17 @@ namespace Project1_tester_
 //foreach (var car in carsByColor)
 //{
 //    Console.WriteLine(car.Model + "   color: " + car.Color);
+//}
+
+
+
+
+
+
+//var redCars = myGarage.Where(car => car.Color == "red");
+
+
+//foreach (var car in redCars)
+//{
+//    Console.WriteLine("Model: " + car.Model + "   MilesPerGallon: " + car.MilesPerGallon );
 //}

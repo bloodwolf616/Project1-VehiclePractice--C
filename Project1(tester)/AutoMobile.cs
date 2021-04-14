@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project1_tester_
 {
-    abstract class AutoMobile : IAutomobile
+    abstract class AutoMobile : IAutomobile, IComparable<AutoMobile>
     {
 
         public int GasTank { get; private set; }
@@ -192,7 +192,28 @@ namespace Project1_tester_
 
 
 
-}
+
+
+        //--------------------------------------------------------------------------------------------------------------
+
+        /// <summary>
+        /// Compares two Automobile objects. Used for sorting lists
+        /// </summary>
+        /// <param name="other">the object you want to compare to</param>
+        /// <returns></returns>
+        public int CompareTo(AutoMobile other)
+        {
+            int result = this.Model.CompareTo(other.Model);
+            
+            if(result == 0)
+            {
+                result = this.Color.CompareTo(other.Color);
+            }
+            
+            
+            return result;
+        }
+    }
 
 }
 
