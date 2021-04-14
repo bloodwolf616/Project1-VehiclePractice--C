@@ -201,6 +201,10 @@ namespace Project1_tester_
         /// </summary>
         /// <param name="other">the object you want to compare to</param>
         /// <returns></returns>
+        /// 
+
+        // CompareTo() method returns 0 if two objects have the same value.
+        // It returns a positive integer if the object passed in should be ordered after, a negative integer if it should be placed before
         public int CompareTo(AutoMobile other)
         {
             int result = this.Model.CompareTo(other.Model);
