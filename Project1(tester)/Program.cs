@@ -9,6 +9,8 @@ namespace Project1_tester_
 {
     class Program
     {
+        
+
         static void Main(string[] args)
         {
 
@@ -39,25 +41,19 @@ namespace Project1_tester_
 
 
 
-                myGarage.Sort();
 
-
-             
-                PickupTruck newTruck = new PickupTruck(15, "black111222", 13, 1995, 5000, "Volvo");
-
-                int result = myGarage.BinarySearch(newTruck);
-
-                if(result < 0)
+                Func<string, int> findAge;
+                findAge = delegate (string question)
                 {
-                    myGarage.Insert(~result, newTruck);
-                }
+                    Console.WriteLine(question);
+                    return int.Parse(Console.ReadLine());
+                };
 
-                foreach (AutoMobile car in myGarage)
-                {
-                    Console.WriteLine($"Model: {car.Model}   Color: {car.Color} \n");
-                }
-
-
+                int getAge = findAge("What is your age?");
+                int ageInDays = getAge * 365;
+                int ageInHours = ageInDays * 24;
+                Console.WriteLine($"You are {ageInHours} hours old.");
+               
 
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
