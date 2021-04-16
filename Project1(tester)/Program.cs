@@ -43,7 +43,7 @@ namespace Project1_tester_
 
 
                 Func<string, int> findAge;
-                findAge = delegate (string question)
+                findAge = (question) =>
                 {
                     Console.WriteLine(question);
                     return int.Parse(Console.ReadLine());
