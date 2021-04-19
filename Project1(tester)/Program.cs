@@ -34,6 +34,7 @@ namespace Project1_tester_
                                                                         new Suv(20, "blue", 25, 2009, 2000, "Toyota"),
                                                                         new Suv(12, "grey", 25, 2003, 2000, "Chevy"),
                                                                         new Suv(13, "white", 25, 2017, 2000, "Chevy"),
+                                                                        new Suv(13, "red", 25, 2017, 2000, "Chevy"),
                                                                         new GarbageTruck(10, "grey", 10, 2002, 5000, 15000, "Camarro"),
                                                                         new GarbageTruck(10, "purple", 10, 2002, 5000, 15000, "Chevy")
 
@@ -41,18 +42,14 @@ namespace Project1_tester_
 
 
 
+                var blackCars = myGarage.Where(car => car.Color == "black")
+                                      .OrderBy(car => car.Model);
 
-                Func<string, int> findAge;
-                findAge = (question) =>
+                foreach(AutoMobile car in blackCars.ToList())
                 {
-                    Console.WriteLine(question);
-                    return int.Parse(Console.ReadLine());
-                };
+                    Console.WriteLine($"Model:  {car.Model}   Color:  {car.Color}");
+                }
 
-                int getAge = findAge("What is your age?");
-                int ageInDays = getAge * 365;
-                int ageInHours = ageInDays * 24;
-                Console.WriteLine($"You are {ageInHours} hours old.");
                
 
             }
@@ -102,15 +99,6 @@ namespace Project1_tester_
 
 
 
-//GarbageCan[] garbageRoute = new GarbageCan[]
-//             {
-//                    new GarbageCan(50),
-//                    new GarbageCan(40),
-//                    new GarbageCan(80),
-//                    new GarbageCan(75),
-//                    new GarbageCan(100)
-
-//             };
 
 
 
@@ -137,43 +125,17 @@ namespace Project1_tester_
 //                                };
 
 
-//Console.WriteLine("Vehicles inventory gouped by color: ");
-
-//var vehiclesByColor = myGarage.GroupBy(car => car.Color);
-
-//foreach (var car in vehiclesByColor)
-//{
-//    if (car.Count() > 0)
-//    {
-//        Console.WriteLine(car.Key + ": {0}", car.Count());
-
-//    }
-//}
 
 
 
 
 
-//var carsColorRed = myGarage.Any(car => car.Color == "red");
-
-//if (!carsColorRed)
-//{
-//    myGarage.Add(new Car(13, "red2222", 13, 2008, "Ford"));
-//}
 
 
 
 
 
-//var carSelector = myGarage.Where(car => car.Color == "white").FirstOrDefault();
-//Console.WriteLine(carSelector.Model + ": " + "this Automobile has been selected");
 
-
-//var carModelNameOrder = myGarage.OrderBy(car => car.Model.Length).TakeWhile(car => car.Model.Length <= 5);
-//foreach (var car in carModelNameOrder.ToList())
-//{
-//    Console.WriteLine(car.Model);
-//}
 
 
 
@@ -194,22 +156,5 @@ namespace Project1_tester_
 //    Console.WriteLine("Model: " + car.Model + "  Color: " + car.Color);
 //}
 
-//var carsByColor = myGarage.OrderBy(car => car.Color);
-
-//foreach (var car in carsByColor)
-//{
-//    Console.WriteLine(car.Model + "   color: " + car.Color);
-//}
 
 
-
-
-
-
-//var redCars = myGarage.Where(car => car.Color == "red");
-
-
-//foreach (var car in redCars)
-//{
-//    Console.WriteLine("Model: " + car.Model + "   MilesPerGallon: " + car.MilesPerGallon );
-//}
