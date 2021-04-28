@@ -42,15 +42,14 @@ namespace Project1_tester_
 
 
 
-                var blackCars = myGarage.Where(car => car.Color == "black")
-                                      .OrderBy(car => car.Model);
 
-                foreach(AutoMobile car in blackCars.ToList())
-                {
-                    Console.WriteLine($"Model:  {car.Model}   Color:  {car.Color}");
-                }
+
+                   
 
                
+                
+
+
 
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }

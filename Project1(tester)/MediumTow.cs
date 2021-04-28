@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project1_tester_
 {
-    class MediumTow : ITowable
+   public class MediumTow : ITowable
     {
 
         //Takes in a trailer weight integer and sets it to the property TrailerWeight. CanTow takes in the traielr weight property/

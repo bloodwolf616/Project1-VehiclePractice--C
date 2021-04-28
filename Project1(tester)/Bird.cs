@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 //i erased the top comment.
 namespace Project1_tester_
 {
-    class Bird
+   public class Bird
     {
         public string Color { get; set; }
     }
