@@ -12,6 +12,8 @@ namespace XUnitTest3
 
         public int MilesperGallon { get; } = 20;
 
+        public bool HazardLights { get; private set; }
+
         public int GasInTank
         {
             get { return _gasInTank; }
@@ -44,8 +46,25 @@ namespace XUnitTest3
             GasInTank = GasTank;
         }
 
+        public bool SetHazardLights(bool button)
+        {
 
-      
+            if (button == true)
+            { Console.WriteLine("Hazard lights are on"); }
+            else
+            {
+                Console.WriteLine("Hazard lights are off.");
+            }
+
+
+
+            return  HazardLights = button;
+
+        }
+
+
+
+
 
 
         /// <summary>
@@ -53,7 +72,7 @@ namespace XUnitTest3
         /// </summary>
         /// <param name="miles">the miles you want to drive as a integer</param>
         /// <returns></returns>
-        public bool DriveBike(int miles)
+        public void DriveBike(int miles)
         {
             int gallonsUsed = miles / MilesperGallon;
 
@@ -65,8 +84,8 @@ namespace XUnitTest3
                 Milage += MilesperGallon;
             }
 
-            if(GasInTank > 0 && gallonsUsed == 0) { return true; }
-            else { return false; }
+            if(gallonsUsed == 0) { Console.WriteLine("You have completed your jouney"); }
+            else { Console.WriteLine("You have completed your journey"); }
         }
     }
 }

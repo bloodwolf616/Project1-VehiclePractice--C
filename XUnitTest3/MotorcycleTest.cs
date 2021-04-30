@@ -19,13 +19,17 @@ namespace XUnitTest3
         [Fact]
             public void MotorcycleCanDrive()
             {
-                
-                    var expected = true;
+                      bool expected = true;
+                      bool actual;
+                  
+                        
+                            _myMotorcycle.DriveBike(100);
+                            if (_myMotorcycle.Milage == 100) { actual= true; }
+                            else { actual = false; }
+                        
 
-                    //Act
-                   bool actual = _myMotorcycle.DriveBike(100);
-                    //Assert
-                    Assert.Equal(expected, actual);
+                       
+                        Assert.Equal(expected, actual);
             }
 
 
@@ -34,6 +38,21 @@ namespace XUnitTest3
         {
 
             var exception = Assert.Throws<InvalidOperationException>(() => _myMotorcycle.DriveBike(500));
+
+
+        }
+
+
+
+        [Fact]
+        public void MotorcycleHazardLights()
+        {
+            //act
+            var actual = _myMotorcycle.SetHazardLights(true);
+            var expected = true;
+            //assert
+            Assert.Equal(expected, actual);
+            
 
 
         }
