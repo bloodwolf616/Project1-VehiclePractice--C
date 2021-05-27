@@ -57,7 +57,7 @@ namespace Project1_tester_
                         }
                         if (value > GasTank) { throw new InvalidOperationException("You are over filling the gas tank!"); }
 
-                        if (value <= 0) { throw new InvalidOperationException("There is no gas left in the tank."); }
+                        if (value <= 0) { throw new ArgumentNullException("There is no gas left in the tank."); }
 
 
                 
