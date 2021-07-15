@@ -11,7 +11,7 @@ namespace Project1_tester_
        public int TrailerWeight { get; private set; }
 
         public override int MilesToOilChange { get; protected set; } = 5000;
-        public PickupTruck(int gasTank, String color, int milesPerGallon, int yearOfManufacturer, int trailerWeight, string model) : base(gasTank, color, milesPerGallon, yearOfManufacturer, model)
+        public PickupTruck(int gasTank, string color, int milesPerGallon, int yearOfManufacturer, int trailerWeight, string model) : base(gasTank, color, milesPerGallon, yearOfManufacturer, model)
         {
             
 

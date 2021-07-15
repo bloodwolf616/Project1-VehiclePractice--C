@@ -74,7 +74,7 @@ namespace Project1_tester_
       // the car will start out locked so you will have to unlock car to use some of the methods
       // Is locked propertiues and all of it's methods.
       
-
+        
         public virtual bool IsLocked { get; private set; }
 
         public void Unlock()
