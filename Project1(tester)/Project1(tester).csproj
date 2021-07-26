@@ -48,6 +48,7 @@
     <Compile Include="Cadillac.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="ChevyTruck.cs" />
+    <Compile Include="Garage.cs" />
     <Compile Include="GarbageCan.cs" />
     <Compile Include="GarbageTruck.cs" />
     <Compile Include="IAutomobile.cs" />
