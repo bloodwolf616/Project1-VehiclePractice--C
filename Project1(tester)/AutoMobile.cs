@@ -217,6 +217,18 @@ namespace Project1_tester_
             
             return result;
         }
+
+
+
+        //------------------------------------------------------------
+
+
+        public string ObjectDataToString()
+        {
+            string objectInStringForm = $"Model: {this.Model} \nColor: {this.Color} \nYear Of Manufacturer: {this.YearOfManufacturer} \nMilage: {this.Milage} \n";
+
+            return objectInStringForm;
+        }
     }
 
 }

@@ -21,7 +21,7 @@ namespace Project1_tester_
 
 
 
-                List<AutoMobile> myGarage = new List<AutoMobile>
+                List<AutoMobile> garage = new List<AutoMobile>
                                                 {
 
                                                                         new PickupTruck(15, "black", 13, 1995, 5000, "Ford"),
@@ -42,6 +42,16 @@ namespace Project1_tester_
 
 
 
+                Garage myGarage = new Garage(garage);
+
+                var blackCars = myGarage.GarageCollection.Where(car => car.Color == "black");
+
+                blackCars.GetEnumerator();
+
+                foreach(var car in blackCars)
+                {
+                    Console.WriteLine(car.ObjectDataToString());
+                }
 
 
                    
