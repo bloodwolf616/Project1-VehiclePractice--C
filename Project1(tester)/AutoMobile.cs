@@ -19,8 +19,8 @@ namespace Project1_tester_
 
         public string Model { get; private set; }
 
-     
 
+    
         public virtual int MilesToOilChange { get; protected set; } = 10000;
 
         //Constructor

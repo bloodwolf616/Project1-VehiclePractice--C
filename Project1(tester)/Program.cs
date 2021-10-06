@@ -21,43 +21,15 @@ namespace Project1_tester_
 
 
 
-                List<AutoMobile> garage = new List<AutoMobile>
-                                                {
 
-                                                                        new PickupTruck(15, "black", 13, 1995, 5000, "Ford"),
-                                                                        new PickupTruck(21, "blue", 13, 2000, 5000, "Chevy"),
-                                                                        new PickupTruck(25, "red", 13, 2013, 5000, "Ram"),
-                                                                        new Car(9, "white", 20, 2010, "Cadillac"),
-                                                                        new Car(19, "red", 20, 2002, "Toyota"),
-                                                                        new Car(8, "black", 20, 2019, "BMW"),
-                                                                        new Car(15, "black", 20, 1999, "Volvo"),
-                                                                        new Suv(20, "blue", 25, 2009, 2000, "Toyota"),
-                                                                        new Suv(12, "grey", 25, 2003, 2000, "Chevy"),
-                                                                        new Suv(13, "white", 25, 2017, 2000, "Chevy"),
-                                                                        new Suv(13, "red", 25, 2017, 2000, "Chevy"),
-                                                                        new GarbageTruck(10, "grey", 10, 2002, 5000, 15000, "Camarro"),
-                                                                        new GarbageTruck(10, "purple", 10, 2002, 5000, 15000, "Chevy")
-
-                                                };
+                string firstName = "John";
+                string lastName = "Smith";
+                int randomNumber = 32;
+                Console.WriteLine("Hello " + firstName + " " + lastName + "\nThis is my program number " + randomNumber);
+                DateTime futureDate = new DateTime(2045, 5, 30, 15, 23, 0);
+                Console.WriteLine(futureDate.ToString());
 
 
-
-                Garage myGarage = new Garage(garage);
-
-                var blackCars = myGarage.GarageCollection.Where(car => car.Color == "black");
-
-                blackCars.GetEnumerator();
-
-                foreach(var car in blackCars)
-                {
-                    Console.WriteLine(car.ObjectDataToString());
-                }
-
-
-                   
-
-               
-                
 
 
 
@@ -103,6 +75,40 @@ namespace Project1_tester_
 //
 
 
+
+
+
+//List<AutoMobile> garage = new List<AutoMobile>
+//                                                {
+
+//                                                                        new PickupTruck(15, "black", 13, 1995, 5000, "Ford"),
+//                                                                        new PickupTruck(21, "blue", 13, 2000, 5000, "Chevy"),
+//                                                                        new PickupTruck(25, "red", 13, 2013, 5000, "Ram"),
+//                                                                        new Car(9, "white", 20, 2010, "Cadillac"),
+//                                                                        new Car(19, "red", 20, 2002, "Toyota"),
+//                                                                        new Car(8, "black", 20, 2019, "BMW"),
+//                                                                        new Car(15, "black", 20, 1999, "Volvo"),
+//                                                                        new Suv(20, "blue", 25, 2009, 2000, "Toyota"),
+//                                                                        new Suv(12, "grey", 25, 2003, 2000, "Chevy"),
+//                                                                        new Suv(13, "white", 25, 2017, 2000, "Chevy"),
+//                                                                        new Suv(13, "red", 25, 2017, 2000, "Chevy"),
+//                                                                        new GarbageTruck(10, "grey", 10, 2002, 5000, 15000, "Camarro"),
+//                                                                        new GarbageTruck(10, "purple", 10, 2002, 5000, 15000, "Chevy")
+
+//                                                };
+
+
+
+//Garage myGarage = new Garage(garage);
+
+//var blackCars = myGarage.GarageCollection.Where(car => car.Color == "black");
+
+//blackCars.GetEnumerator();
+
+//foreach (var car in blackCars)
+//{
+//    Console.WriteLine(car.ObjectDataToString());
+//}
 
 
 
