@@ -53,6 +53,7 @@
     <Compile Include="GarbageTruck.cs" />
     <Compile Include="IAutomobile.cs" />
     <Compile Include="LargeTow.cs" />
+    <Compile Include="Mammal.cs" />
     <Compile Include="MediumTow.cs" />
     <Compile Include="NotTowable.cs" />
     <Compile Include="NotTowableVehicleTest.cs" />

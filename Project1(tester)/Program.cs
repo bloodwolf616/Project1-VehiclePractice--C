@@ -17,24 +17,18 @@ namespace Project1_tester_
             //be careful. try block will stop program when it catches the first error.
             try
             {
-
-
-
-
-
-                string firstName = "John";
-                string lastName = "Smith";
-                int randomNumber = 32;
-                Console.WriteLine("Hello " + firstName + " " + lastName + "\nThis is my program number " + randomNumber);
-                DateTime futureDate = new DateTime(2045, 5, 30, 15, 23, 0);
-                Console.WriteLine(futureDate.ToString());
-
-
-
-
+                Mammal lion = new Mammal();
+                lion.NameOfMammal = "Lion";
+                Mammal dog = new Mammal();
+                dog.NameOfMammal = "Dog";
+                Console.WriteLine(lion.SoundOfMammal);
+                Console.WriteLine(dog.SoundOfMammal);
 
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
+
+            finally { }
+
            
             
             Console.ReadLine();
