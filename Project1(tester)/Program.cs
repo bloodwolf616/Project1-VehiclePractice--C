@@ -17,12 +17,7 @@ namespace Project1_tester_
             //be careful. try block will stop program when it catches the first error.
             try
             {
-                Mammal lion = new Mammal();
-                lion.NameOfMammal = "Lion";
-                Mammal dog = new Mammal();
-                dog.NameOfMammal = "Dog";
-                Console.WriteLine(lion.SoundOfMammal);
-                Console.WriteLine(dog.SoundOfMammal);
+                Mammal fishie = new Mammal("Fish");
 
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
