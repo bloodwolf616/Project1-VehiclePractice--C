@@ -19,38 +19,25 @@ namespace Project1_tester_
             //be careful. try block will stop program when it catches the first error.
             try
             {
-                List<AutoMobile> garage = new List<AutoMobile>
-                {
 
-                        new PickupTruck(15, "black", 13, 1995, 5000, "Ford"),
-                        new PickupTruck(21, "blue", 13, 2000, 5000, "Chevy"),
-                        new PickupTruck(25, "red", 13, 2013, 5000, "Ram"),
-                        new Car(9, "white", 20, 2010, "Cadillac"),
-                        new Car(19, "red", 20, 2002, "Toyota"),
-                        new Car(8, "black", 20, 2019, "BMW"),
-                        new Car(15, "black", 20, 1999, "Volvo"),
-                        new Suv(20, "blue", 25, 2009, 2000, "Toyota"),
-                        new Suv(12, "grey", 25, 2003, 2000, "Chevy"),
-                        new Suv(13, "white", 25, 2017, 2000, "Chevy"),
-                        new Suv(13, "red", 25, 2017, 2000, "Chevy"),
-                        new GarbageTruck(10, "grey", 10, 2002, 5000, 15000, "Camarro"),
-                        new GarbageTruck(10, "purple", 10, 2002, 5000, 15000, "Chevy")
-
-                };
-
-                List<AutoMobile> blackCars = garage.Where(c => c.Color == "black").ToList();
-                
-                Garage myGarage = new Garage(blackCars);
-
-                foreach(var car in myGarage.GarageCollection)
-                {
-                    Console.WriteLine($"Car Model: {car.Model} Car Year: {car.YearOfManufacturer} Car Color: {car.Color}");
-                }
+             
 
 
+                Bird bird = new Bird("red", "blue", 10);
 
+                //bird.Feed(2);
+                //bird.Feed(2);
+                //bird.Feed(2);
+                //bird.Feed(2);
+                //bird.Feed(2);
+                //bird.fly();
+                //Console.WriteLine(bird.ReturnColors());
 
+                Peacock bird2 = new Peacock("red", "blue", 10);
+                //bird2.fly();
+                //bird2.Feed();
 
+                Console.WriteLine(bird.Equals(bird2));
 
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }

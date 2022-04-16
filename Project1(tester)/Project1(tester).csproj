@@ -57,6 +57,7 @@
     <Compile Include="MediumTow.cs" />
     <Compile Include="NotTowable.cs" />
     <Compile Include="NotTowableVehicleTest.cs" />
+    <Compile Include="Peacock.cs" />
     <Compile Include="PickupTruck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
