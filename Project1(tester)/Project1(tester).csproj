@@ -51,6 +51,7 @@
     <Compile Include="Garage.cs" />
     <Compile Include="GarbageCan.cs" />
     <Compile Include="GarbageTruck.cs" />
+    <Compile Include="IAnimal.cs" />
     <Compile Include="IAutomobile.cs" />
     <Compile Include="LargeTow.cs" />
     <Compile Include="Mammal.cs" />

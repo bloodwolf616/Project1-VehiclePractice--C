@@ -23,7 +23,7 @@ namespace Project1_tester_
              
 
 
-                Bird bird = new Bird("red", "blue", 10);
+              
 
                 //bird.Feed(2);
                 //bird.Feed(2);
@@ -37,7 +37,7 @@ namespace Project1_tester_
                 //bird2.fly();
                 //bird2.Feed();
 
-                Console.WriteLine(bird.Equals(bird2));
+                
 
 
                 List<AutoMobile> garage = new List<AutoMobile>

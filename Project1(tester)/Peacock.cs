@@ -17,5 +17,10 @@ namespace Project1_tester_
         {
             Console.WriteLine("Woop");
         }
+
+        public override void MatingCall()
+        {
+            Console.WriteLine("CAWW!!!");
+        }
     }
 }

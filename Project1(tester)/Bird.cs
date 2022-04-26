@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 //i erased the top comment.
 namespace Project1_tester_
 {
-   public class Bird
+   public abstract class Bird
     {
         public string PrimaryColor { get; }
 
@@ -97,5 +97,13 @@ namespace Project1_tester_
                    this.SecondaryColor == that.SecondaryColor &&
                    this.Age == that.Age;
         }
+
+        public override int GetHashCode()
+        {
+            return Age.GetHashCode() * 50;
+        }
+
+        public abstract void MatingCall();
+        
     }
 }

@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace Project1_tester_
 {
-  public class Mammal
+  public class Mammal : IAnimal
   {
         private string _nameOfMammal;
+        public string Name { get; private set; }
+        public string Species { get; private set; }
 
+        public string Move()
+        {
+            throw new NotImplementedException();
+        }
 
-        //create a constructor that sets the name of the mammal
+            //create a constructor that sets the name of the mammal
 
-        public Mammal(string name)
+            public Mammal(string name)
         {
             NameOfMammal = name;
             
@@ -58,5 +64,8 @@ namespace Project1_tester_
                 }
            
             }
+
+        
+        
    }
 }
