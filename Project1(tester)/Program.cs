@@ -25,17 +25,14 @@ namespace Project1_tester_
 
               
 
-                //bird.Feed(2);
-                //bird.Feed(2);
-                //bird.Feed(2);
-                //bird.Feed(2);
-                //bird.Feed(2);
-                //bird.fly();
-                //Console.WriteLine(bird.ReturnColors());
 
                 Peacock bird2 = new Peacock("red", "blue", 10);
-                //bird2.fly();
-                //bird2.Feed();
+                List<Bird> birdCage = new List<Bird>();
+
+
+                birdCage.Add(new Peacock("red", "grey", 10));
+
+                Console.WriteLine(birdCage.Count);
 
                 
 
@@ -58,6 +55,16 @@ namespace Project1_tester_
                                                                                         new GarbageTruck(10, "purple", 10, 2002, 5000, 15000, "Chevy")
 
                  };
+
+
+                IEnumerable<AutoMobile> whiteCars = garage.Where(car => car.Color == "white");
+
+                whiteCars.ToList();
+
+                foreach(var car in whiteCars)
+                {
+                    Console.WriteLine($"Model: {car.Model} Color: {car.Color}");
+                }
 
                
 
