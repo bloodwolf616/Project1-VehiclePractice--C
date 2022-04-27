@@ -57,14 +57,16 @@ namespace Project1_tester_
                  };
 
 
-                IEnumerable<AutoMobile> whiteCars = garage.Where(car => car.Color == "white");
+                var Cars = garage.Where(car => car.Color == "white").FirstOrDefault();
 
-                whiteCars.ToList();
+               
 
-                foreach(var car in whiteCars)
-                {
-                    Console.WriteLine($"Model: {car.Model} Color: {car.Color}");
-                }
+                Console.WriteLine(Cars.Color);
+
+                //foreach(var car in Cars)
+                //{
+                //    Console.WriteLine($"Model: {car.Key} Color: {car.Count()}");
+                //}
 
                
 
