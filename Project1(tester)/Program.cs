@@ -63,6 +63,14 @@ namespace Project1_tester_
 
                 Console.WriteLine(Cars.Color);
 
+
+                int numOne = 10;
+                int numTwo = 3;
+
+                float numThree = ((float)numOne / numTwo);
+
+                Console.WriteLine(numThree);
+
                 //foreach(var car in Cars)
                 //{
                 //    Console.WriteLine($"Model: {car.Key} Color: {car.Count()}");
